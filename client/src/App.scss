@@ -1,0 +1,99 @@
+@import "sass/params";
+@import "sass/mixins";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+  #header {
+    padding: 10px;
+    background-color: $blue;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    h1 {
+      display: inline-block;
+      color: $white;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin: 0 10px
+      }
+    }
+  }
+  input[type="submit"], input[type="reset"] {
+    @include btn;
+    margin: 0;
+    height: 33px;
+    width: 100px;
+  }
+  label {
+    margin-top: 15px;
+    display: block;
+  }
+  input[type="submit"] {
+    &:hover {
+      background: darken($blue, 10%);
+      @include hoverButton;
+    }
+    background: $blue;
+    margin-right: 10px;
+  }
+  input[type="reset"] {
+    &:hover {
+      background: darken($red, 20%);
+      @include hoverButton;
+    }
+    background: $red;
+  }
+  button {
+    &#addRecord {
+      @include btn;
+      background-color: $green;
+
+      &:hover {
+        background-color: darken($green, 20%);
+        @include hoverButton;
+      }
+    }
+  }
+  .container {
+    width: 70%;
+    margin: auto;
+    min-width: 300px;
+
+    h2 {
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+    }
+
+  }
+  a {
+    color: $white;
+    &.logout {
+      color: #000000;
+      background: #fff;
+      padding: 3px 7px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 0 0 0 10px;
+    }
+  }
+  .userName {
+    color: $white;
+  }
+}

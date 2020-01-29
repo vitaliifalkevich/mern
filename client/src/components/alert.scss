@@ -1,0 +1,20 @@
+@import "../sass/params";
+
+.alert{
+  padding: 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  &.success {
+    background-color: lighten($green, 35%);
+    i {
+      color: $green;
+    }
+  }
+  &.notice {
+    background-color: lighten($yellow, 5%);
+    i {
+      color: darken($yellow, 30%)
+    }
+  }
+
+}

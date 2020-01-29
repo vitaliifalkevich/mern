@@ -1,0 +1,40 @@
+@import "../sass/params";
+
+body {
+  .content {
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 30px 5px;
+
+    a.addNewEmployee {
+      color: $blue;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    table {
+      width: 100%;
+      max-width: 800px;
+      min-width: 300px;
+      margin: 0 auto;
+      border-collapse: collapse;
+
+      tr:nth-child(even) {
+        background-color: $bgEvenTD;
+      }
+
+      th {
+        background-color: $bgTH;
+      }
+      td, th {
+        border: 1.5px solid $borderTD;
+        padding: 8px;
+        a {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+}

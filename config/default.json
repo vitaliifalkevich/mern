@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://mern_task:ribrjfsdDFKJSfd@mern-t9uww.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secretToken123"
+}

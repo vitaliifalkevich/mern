@@ -1,0 +1,14 @@
+@import "../../sass/params";
+
+.auth {
+  border-radius: 10px;
+  background-color: $auth;
+  width: 30%;
+  margin: 70px auto 0;
+  padding: 15px 50px;
+
+  .btn-groups {
+    margin-top: 20px;
+    text-align: right;
+  }
+}
